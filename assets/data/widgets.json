@@ -1,0 +1,27 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/container.png",
+    "title": "Container",
+    "tip": "一个拥有绘制、定位、调整大小的 widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/row.png",
+    "title": "Row",
+    "tip": "在水平方向上排列子widget的列表。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/column.png",
+    "title": "Column",
+    "tip": "在垂直方向上排列子widget的列表。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/image.png",
+    "title": "Image",
+    "tip": "一个显示图片的widget",
+    "type": 1
+  }
+]
+
