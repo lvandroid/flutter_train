@@ -1,7 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_train/entity/widget_list.dart';
 import 'package:flutter_train/ui/widgets_page.dart';
 
@@ -14,51 +11,33 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>
+    with AutomaticKeepAliveClientMixin {
   List<WidgetEntity> items = [];
   int _selectedIndex = 0;
-  static List<Widget> _widgetOptions = <Widget>[WidgetsPage(), WidgetsPage()];
+  static List<Widget> _widgetOptions = <Widget>[
+    WidgetsPage(),
+    Center(
+      child: Text('关于Flutter'),
+    )
+  ];
 
   @override
   void initState() {
     super.initState();
-    decoderWidgetList().then((onValue) {
-      setState(() {
-        items = onValue.widgetList;
-      });
-    });
   }
 
-  Future<String> _loadWidgetsJson() async {
-    return await rootBundle.loadString('assets/data/widgets.json');
-  }
-
-  Future<WidgetList> decoderWidgetList() async {
-    String widgetListJson = await _loadWidgetsJson();
-    List<dynamic> list = json.decode(widgetListJson);
-    WidgetList widgetList = WidgetList.fromJson(list);
-    widgetList.widgetList
-        .forEach((widget) => print('widget title is ${widget.title}'));
-    return widgetList;
-  }
+  var _pageController = PageController(keepPage: true);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Flutter Widgets'),
-        centerTitle: true,
-      ),
-      body: Container(
-//        padding: EdgeInsets.all(4.0),
-        child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2, mainAxisSpacing: 4.0, crossAxisSpacing: 4.0,childAspectRatio: 1.05),
-          itemBuilder: (context, index) {
-            return _WidgetItemCard(items[index]);
-          },
-          itemCount: items.length,
-        ),
+      body: PageView.builder(
+        physics: NeverScrollableScrollPhysics(),
+        controller: _pageController,
+        itemCount: _widgetOptions.length,
+        onPageChanged: _onPageChanged,
+        itemBuilder: (context, index) => _widgetOptions[index],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -67,59 +46,25 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), title: Text('关于')),
         ],
         currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
+        onTap: (index) {
+          _pageController.jumpToPage(index);
+        },
       ),
     );
   }
 
-  void _onItemTapped(int index) {
+  void _onPageChanged(int index) {
     setState(() {
-      _selectedIndex = index;
+      if (_selectedIndex != index) _selectedIndex = index;
     });
   }
-}
-
-class _WidgetItemCard extends StatefulWidget {
-  WidgetEntity bean;
-
-  _WidgetItemCard(this.bean);
 
   @override
-  State<StatefulWidget> createState() {
-    return _WidgetItemCardState();
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
-}
 
-class _WidgetItemCardState extends State<_WidgetItemCard> {
   @override
-  Widget build(BuildContext context) {
-    WidgetEntity bean = widget.bean;
-    return GestureDetector(
-      onTap: null,
-      child: Card(
-        child: Container(
-          padding: EdgeInsets.all(8.0),
-          decoration: BoxDecoration(color: Colors.white),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Image.asset(
-                bean.imagePath,
-                width: 100.0,
-                height: 100.0,
-              ),
-              Text(
-                bean.title,
-                style: TextStyle(color: Colors.black, fontSize: 20.0),
-              ),
-              Text(
-                bean.tip,
-                style: TextStyle(color: Colors.black45, fontSize: 12.0),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+  bool get wantKeepAlive => true;
 }

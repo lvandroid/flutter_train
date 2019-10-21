@@ -1,0 +1,122 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedContainer",
+    "tip": "在一段时间内逐渐改变其值的容器。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedCrossFade",
+    "tip": "一个widget，在两个孩子之间交叉淡入，并同时调整他们的尺寸",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Hero",
+    "tip": "将其子项标记为hero动画候选的widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedBuilder",
+    "tip": "用于构建动画的通用小部件。AnimatedBuilder在有多个widget希望有一个动画作为一个较大的建造函数部分时会非常有用。要使用AnimatedBuilder，只需构建widget并将其传给builder函数即可。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "DecoratedBoxTransition",
+    "tip": "DecoratedBox的动画版本，可以给它的Decoration不同属性使用动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "FadeTransition",
+    "tip": "对透明度使用动画的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "PositionedTransition",
+    "tip": "Positioned的动画版本，它需要一个特定的动画来将孩子的位置从动画的生命周期的起始位置移到结束位置。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "RotationTransition",
+    "tip": "对widget使用旋转动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "ScaleTransition",
+    "tip": "对widget使用缩放动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "SizeTransition",
+    "tip": "Animates its own size and clips and aligns the child.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "SlideTransition",
+    "tip": "对相对于其正常位置的某个位置之间使用动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedDefaultTextStyle",
+    "tip": "在文本样式切换时使用动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedListState",
+    "tip": "动画列表的state",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedModalBarrier",
+    "tip": "一个阻止用户与widget交互的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedOpacity",
+    "tip": "Opacity的动画版本，在给定的透明度变化时，自动地在给定的一段时间内改变孩子的Opacity",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedPhysicalModel",
+    "tip": "PhysicalModel的动画版本",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedPositioned",
+    "tip": "动画版本的Positioned，每当给定位置的变化，自动在给定的时间内转换孩子的位置。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedSize",
+    "tip": "动画widget，当给定的孩子的大小变化时，它自动地在给定时间内转换它的大小。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedWidget",
+    "tip": "当给定的Listenable改变值时，会重新构建该widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AnimatedWidgetBaseState",
+    "tip": "具有隐式动画的widget的基类",
+    "type": 1
+  }
+]

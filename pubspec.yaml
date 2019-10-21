@@ -48,7 +48,7 @@ flutter:
   assets:
     - assets/images/
     - assets/widgetIcons/
-    - assets/data/widgets.json
+    - assets/data/
 #    - widgetIcons/container.png
 #    - widgetIcons/row.png
 #    - widgetIcons/column.png

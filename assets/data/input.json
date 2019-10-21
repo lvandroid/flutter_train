@@ -1,0 +1,20 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Form",
+    "tip": "一个可选的、用于给多个TextField分组的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "FormField",
+    "tip": "一个单独的表单字段。此widget维护表单字段的当前状态，以便在UI中直观地反映更新和验证错误。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "RawKeyboardListener",
+    "tip": "每当用户按下或释放键盘上的键时调用回调的widget。",
+    "type": 1
+  }
+]

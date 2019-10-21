@@ -1,0 +1,50 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "LongPressDraggable",
+    "tip": "可以使其子widget在长按时可拖动",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "GestureDetector",
+    "tip": "一个检测手势的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "DragTarget",
+    "tip": "一个拖动的目标widget，在完成拖动时它可以接收数据",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Dismissible",
+    "tip": "可以在拖动时隐藏的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "IgnorePointer",
+    "tip": "在hit test中不可见的widget。当ignoring为true时，此widget及其子树不响应事件。但它在布局过程中仍然消耗空间，并像往常一样绘制它的孩子。它是无法捕获事件对象、因为它在RenderBox.hitTest中返回false",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AbsorbPointer",
+    "tip": "在hit test期间吸收(拦截)事件。当absorbing为true时，此小部件阻止其子树通过终止命中测试来接收指针事件。它在布局过程中仍然消耗空间，并像往常一样绘制它的孩子。它只是防止其孩子成为事件命中目标，因为它从RenderBox.hitTest返回true。\n\n文档",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Navigator",
+    "tip": "导航器，可以在多个页面(路由)栈之间跳转。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Scrollable",
+    "tip": "实现了可滚动widget的交互模型，但不包含UI显示相关的逻辑",
+    "type": 1
+  }
+]

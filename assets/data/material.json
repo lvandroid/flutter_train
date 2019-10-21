@@ -1,0 +1,212 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/scaffold.png",
+    "title": "Scaffold",
+    "tip": "Material Design布局结构的基本实现。此类提供了用于显示drawer、snackbar和底部sheet的API。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/appbar.png",
+    "title": "Appbar",
+    "tip": "一个Material Design应用程序栏，由工具栏和其他可能的widget（如TabBar和FlexibleSpaceBar）组成。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/bottom_navigation_bar.png",
+    "title": "BottomNavigationBar",
+    "tip": "底部导航条，可以很容易地在tap之间切换和浏览顶级视图。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/tabbar.png",
+    "title": "TabBar",
+    "tip": "一个显示水平选项卡的Material Design widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/tabbar.png",
+    "title": "TabBarView",
+    "tip": "显示与当前选中的选项卡相对应的页面视图。通常和TabBar一起使用。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/material_app.png",
+    "title": "MaterialApp",
+    "tip": "一个方便的widget，它封装了应用程序实现Material Design所需要的一些widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "WidgetsApp",
+    "tip": "一个方便的类，它封装了应用程序通常需要的一些widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/drawer.png",
+    "title": "Drawer",
+    "tip": "从Scaffold边缘水平滑动以显示应用程序中导航链接的Material Design面板。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/raised_button.png",
+    "title": "RaisedButton",
+    "tip": "Material Design中的button， 一个凸起的材质矩形按钮",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/floating_action_button.png",
+    "title": "FloatingActionButton",
+    "tip": "一个圆形图标按钮，它悬停在内容之上，以展示应用程序中的主要动作。FloatingActionButton通常用于Scaffold.floatingActionButton字段。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/flat_button.png",
+    "title": "FlatButton",
+    "tip": "一个扁平的Material按钮",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon_button.png",
+    "title": "IconButton",
+    "tip": "一个Material图标按钮，点击时会有水波动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/popup_menu_button.png",
+    "title": "PopupMenuButton",
+    "tip": "当菜单隐藏式，点击或调用onSelected时显示一个弹出式菜单列表",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "ButtonBar",
+    "tip": "水平排列的按钮组",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/text_field.png",
+    "title": "TextField",
+    "tip": "文本输入框",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/check_box.png",
+    "title": "Checkbox",
+    "tip": "复选框，允许用户从一组中选择多个选项。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/radio.png",
+    "title": "Radio",
+    "tip": "单选框，允许用户从一组中选择一个选项。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/switch.png",
+    "title": "Switch",
+    "tip": "On/off 用于切换一个单一状态",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/slider.png",
+    "title": "Slider",
+    "tip": "滑块，允许用户通过滑动滑块来从一系列值中选择。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/date_time_pickers.png",
+    "title": "Date & Time Pickers",
+    "tip": "日期&时间选择器",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/simple_dialog.png",
+    "title": "SimpleDialog",
+    "tip": "简单对话框可以显示附加的提示或操作",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/alert_dialog.png",
+    "title": "AlertDialog",
+    "tip": "一个会中断用户操作的对话款，需要用户确认",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/bottom_sheet.png",
+    "title": "BottomSheet",
+    "tip": "BottomSheet是一个从屏幕底部滑起的列表（以显示更多的内容）。你可以调用showBottomSheet()或showModalBottomSheet弹出",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/expansion_panel.png",
+    "title": "ExpansionPanel",
+    "tip": "Expansion panels contain creation flows and allow lightweight editing of an element. The ExpansionPanel widget implements this component.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/snack_bar.png",
+    "title": "SnackBar",
+    "tip": "具有可选操作的轻量级消息提示，在屏幕的底部显示。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/image.png",
+    "title": "Image",
+    "tip": "一个显示图片的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Icon",
+    "tip": "A Material Design icon.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/chip.png",
+    "title": "Chip",
+    "tip": "标签，一个Material widget。 它可以将一个复杂内容实体展现在一个小块中，如联系人。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/tool_tip.png",
+    "title": "Tooltip",
+    "tip": "一个文本提示工具，帮助解释一个按钮或其他用户界面，当widget长时间按下时（当用户采取其他适当操作时）显示一个提示标签。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/data_table.png",
+    "title": "DataTable",
+    "tip": "数据表显示原始数据集。它们通常出现在桌面企业产品中。DataTable Widget实现这个组件",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/card.png",
+    "title": "Card",
+    "tip": "一个 Material Design 卡片。拥有一个圆角和阴影",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/linear_progress_indicator.png",
+    "title": "LinearProgressIndicator",
+    "tip": "一个线性进度条，另外还有一个圆形进度条CircularProgressIndicator",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/list_tile.png",
+    "title": "ListTile",
+    "tip": "一个固定高度的行，通常包含一些文本，以及一个行前或行尾图标。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/stepper.png",
+    "title": "Stepper",
+    "tip": "一个Material Design 步骤指示器，显示一系列步骤的过程",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/divider.png",
+    "title": "Divider",
+    "tip": "一个逻辑1像素厚的水平分割线，两边都有填充",
+    "type": 1
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "FutureBuilder",
+    "tip": "基于与Future交互的最新快照来构建自身的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "StreamBuilder",
+    "tip": "基于与流交互的最新快照构建自身的widget",
+    "type": 1
+  }
+]

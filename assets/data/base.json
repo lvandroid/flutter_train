@@ -1,0 +1,69 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/container.png",
+    "title": "Container",
+    "tip": "一个拥有绘制、定位、调整大小的 widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/row.png",
+    "title": "Row",
+    "tip": "在水平方向上排列子widget的列表。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/column.png",
+    "title": "Column",
+    "tip": "在垂直方向上排列子widget的列表。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/image.png",
+    "title": "Image",
+    "tip": "一个显示图片的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/text.png",
+    "title": "Text",
+    "tip": "单一格式的文本",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Icon",
+    "tip": "A Material Design icon.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/raised_button.png",
+    "title": "RaisedButton",
+    "tip": "Material Design中的button， 一个凸起的材质矩形按钮",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/scaffold.png",
+    "title": "Scaffold",
+    "tip": "Material Design布局结构的基本实现。此类提供了用于显示drawer、snackbar和底部sheet的API。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/appbar.png",
+    "title": "Appbar",
+    "tip": "一个Material Design应用程序栏，由工具栏和其他可能的widget（如TabBar和FlexibleSpaceBar）组成。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "FlutterLogo",
+    "tip": "Flutter logo, 以widget形式. 这个widget遵从IconTheme。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Placeholder",
+    "tip": "一个绘制了一个盒子的的widget，代表日后有widget将会被添加到该盒子中",
+    "type": 1
+  }
+]
+

@@ -1,0 +1,62 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "ListView",
+    "tip": "一个可滚动的列表",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "NestedScrollView",
+    "tip": "一个可以嵌套其它可滚动widget的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "GridView",
+    "tip": "一个可滚动的二维空间数组",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "SingleChildScrollView",
+    "tip": "有一个子widget的可滚动的widget，子内容超过父容器时可以滚动。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Scrollable",
+    "tip": "实现了可滚动widget的交互模型，但不包含UI显示相关的逻辑",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Scrollbar",
+    "tip": "一个Material Design 滚动条，表示当前滚动到了什么位置",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CustomScrollView",
+    "tip": "一个使用slivers创建自定义的滚动效果的ScrollView",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "NotificationListener",
+    "tip": "一个用来监听树上冒泡通知的widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "ScrollConfiguration",
+    "tip": "控制可滚动组件在子树中的表现行为",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/refresh_indicator.png",
+    "title": "RefreshIndicator",
+    "tip": "Material Design下拉刷新指示器，包装一个可滚动widget",
+    "type": 1
+  }
+]

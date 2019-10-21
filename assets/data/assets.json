@@ -1,0 +1,26 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/image.png",
+    "title": "Image",
+    "tip": "一个显示图片的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Icon",
+    "tip": "A Material Design icon",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "RawImage",
+    "tip": "一个直接显示dart:ui.Image的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "AssetBundle",
+    "tip": "包含应用程序可以使用的资源，如图像和字符串。对这些资源的访问是异步，所以他们可以来自网络（例如，从NetworkAssetBundle）或从本地文件系统，这并不会挂起用户界面。",
+    "type": 1
+  }
+]

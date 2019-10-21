@@ -1,0 +1,20 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/text.png",
+    "title": "Text",
+    "tip": "单一格式的文本",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "RichText",
+    "tip": "一个富文本Text，可以显示多种样式的text。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "DefaultTextStyle",
+    "tip": "文字样式，用于指定Text widget的文字样式",
+    "type": 1
+  }
+]

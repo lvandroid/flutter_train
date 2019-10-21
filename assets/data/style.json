@@ -1,0 +1,20 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/padding.png",
+    "title": "Padding",
+    "tip": "一个widget, 会给其子widget添加指定的填充",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Theme",
+    "tip": "将主题应用于子widget。主题描述了应用选择的颜色和字体",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "MediaQuery",
+    "tip": "建立一个子树，在树中媒体查询解析不同的给定数据",
+    "type": 1
+  }
+]

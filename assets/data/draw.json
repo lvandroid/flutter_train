@@ -1,0 +1,62 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/opacity.png",
+    "title": "Opacity",
+    "tip": "使其子widget透明的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "Transform",
+    "tip": "在绘制子widget之前应用转换的widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/decoratedbox.png",
+    "title": "DecoratedBox",
+    "tip": "在孩子绘制之前或之后绘制装饰的widget。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "FractionalTranslation",
+    "tip": "绘制盒子之前给其添加一个偏移转换",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "RotatedBox",
+    "tip": "可以延顺时针以90度的倍数旋转其子widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/clip_oval.png",
+    "title": "ClipOval",
+    "tip": "用椭圆剪辑其孩子的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "ClipPath",
+    "tip": "用path剪辑其孩子的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/clip_rect.png",
+    "title": "ClipRect",
+    "tip": "用矩形剪辑其孩子的widget",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/custom_paint.png",
+    "title": "CustomPaint",
+    "tip": "提供一个画布的widget，在绘制阶段可以在画布上绘制自定义图形",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "BackdropFilter",
+    "tip": "一个widget，它将过滤器应用到现有的绘图内容，然后绘制孩子。这种效果是比较昂贵的，尤其是如果过滤器是non-local，如blur。",
+    "type": 1
+  }
+]

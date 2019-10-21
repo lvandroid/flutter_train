@@ -1,0 +1,86 @@
+[
+  {
+    "imagePath": "assets/widgetIcons/ios_indicator.png",
+    "title": "CupertinoActivityIndicator",
+    "tip": "一个iOS风格的loading指示器。显示一个圆形的转圈菊花",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoAlertDialog",
+    "tip": "iOS风格的alert dialog.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_button.png",
+    "title": "CupertinoButton",
+    "tip": "iOS风格的button.",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_dialog.png",
+    "title": "CupertinoDialog",
+    "tip": "iOS风格的对话框",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoDialogAction",
+    "tip": "通常用于CupertinoAlertDialog的一个button",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_slider.png",
+    "title": "CupertinoSlider",
+    "tip": "从一个范围中选一个值",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_switch.png",
+    "title": "CupertinoSwitch",
+    "tip": "iOS风格的开关. 用于单一状态的开/关",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoPageTransition",
+    "tip": "提供iOS风格的页面过度动画",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoFullscreenDialogTransition",
+    "tip": "一个iOS风格的过渡，用于调用全屏对话框。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_navigaton_bar.png",
+    "title": "CupertinoNavigationBar",
+    "tip": "iOS风格的导航栏. 通常和CupertinoPageScaffold一起使用。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/ios_tab_bar.png",
+    "title": "CupertinoTabBar",
+    "tip": "iOS风格的底部选项卡。 通常和CupertinoTabScaffold一起使用。",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoPageScaffold",
+    "tip": "一个iOS风格的页面的基本布局结构。包含内容和导航栏",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoTabScaffold",
+    "tip": "标签式iOS应用程序的结构。将选项卡栏放在内容选项卡之上",
+    "type": 1
+  },
+  {
+    "imagePath": "assets/widgetIcons/icon.png",
+    "title": "CupertinoTabView",
+    "tip": "支持选项卡间并行导航项卡的根内容。通常与CupertinoTabScaffolde一起使用",
+    "type": 1
+  }
+]
