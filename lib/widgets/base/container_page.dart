@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ContainerPage extends StatefulWidget {
+  String title;
+  String tip;
+
+  ContainerPage({this.title, this.tip});
+
   @override
   _ContainerPageState createState() => _ContainerPageState();
 }
@@ -59,7 +64,9 @@ class _ContainerPageState extends State<ContainerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _appBar,
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
       body: Center(),
       floatingActionButton:
           FloatingActionButton(onPressed: () => _appbarDialog()),

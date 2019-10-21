@@ -3,7 +3,9 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_train/constants/widget_key_constants.dart';
 import 'package:flutter_train/entity/widget_list.dart';
+import 'package:flutter_train/widgets/base/container_page.dart';
 
 class WidgetListPage extends StatefulWidget {
   int type;
@@ -115,7 +117,7 @@ class _WidgetItemCardState extends State<_WidgetItemCard> {
   Widget build(BuildContext context) {
     WidgetEntity bean = widget.bean;
     return GestureDetector(
-      onTap: null,
+      onTap: _onTap,
       child: Card(
         child: Container(
           padding: EdgeInsets.all(8.0),
@@ -143,5 +145,20 @@ class _WidgetItemCardState extends State<_WidgetItemCard> {
         ),
       ),
     );
+  }
+
+  var _pageRouter = {
+    CONTAINER: ContainerPage(title: CONTAINER, tip: CONTAINER_TIP),
+  };
+
+  void _onTap() {
+    WidgetEntity bean = widget.bean;
+    String title = bean.title;
+    try {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => _pageRouter[title]));
+    } catch (e) {
+      print(e);
+    }
   }
 }
