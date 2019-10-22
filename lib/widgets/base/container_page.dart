@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_train/assetsConstants/myColors.dart';
+import 'package:flutter_train/assetsConstants/my_style.dart';
+import 'package:flutter_train/assetsConstants/widget_code_block.dart';
+import 'package:flutter_train/constants/widget_key_constants.dart';
+import 'package:oktoast/oktoast.dart';
 
 class ContainerPage extends StatefulWidget {
   String title;
@@ -11,54 +16,84 @@ class ContainerPage extends StatefulWidget {
 }
 
 class _ContainerPageState extends State<ContainerPage> {
-  Widget _leading;
-  bool _automaticallyImplyLeading = true;
-  Text _title = Text('AppBar');
-  List<Widget> _actions;
-  Widget _flexibleSpace;
-  PreferredSizeWidget _bottom;
-  double _elevation;
-  ShapeBorder _shape;
-  Color _backgroundColor = Colors.blue;
-  Brightness _brightness = Brightness.light;
-  IconThemeData _iconTheme;
-  IconThemeData _actionsIconTheme;
-  TextTheme _textTheme;
-  bool _primary = false;
-  bool _centerTitle;
-  double _titleSpacing = NavigationToolbar.kMiddleSpacing;
-  double _toolbarOpacity = 1.0;
-  double _bottomOpacity = 1.0;
+  AlignmentGeometry _alignment = Alignment.center;
 
-  AppBar _appBar;
+  EdgeInsets _padding;
+  double _decorationCircular = 0.0;
+  Color _decorationColor = Colors.orange;
+  Color _foregroundDecorationColor = Colors.transparent;
+  static double _constraintsWidth = 300.0;
+  static double _constraintsHeight = 200.0;
+  BoxConstraints _constraints = BoxConstraints.expand(
+      width: _constraintsWidth, height: _constraintsHeight);
+  EdgeInsets _margin;
+  static Matrix4 _transformX = Matrix4.rotationX(20.0);
+  static Matrix4 _transformY = Matrix4.rotationY(20.0);
+  static Matrix4 _transformZ = Matrix4.rotationZ(20.0);
+  static Matrix4 _transform = Matrix4.copy(_transformX);
+  Color _color = Colors.green;
+  double _width = 300.0;
+  double _height = 200.0;
+
+  Container _container;
+  Container _child;
+
+  final double _propertyNameWidth = 100.0;
+  final TextStyle _propertyNameStyle =
+      TextStyle(color: Colors.white, fontSize: 20.0);
+  final TextStyle codePinkStyle = TextStyle(color: MyColors.code_pink);
+  final TextStyle codeYellowStyle = TextStyle(color: MyColors.code_yellow);
+
+  void _init() {
+    _alignment = Alignment.center;
+    _padding = null;
+    _decorationCircular = 0.0;
+    _decorationColor = Colors.orange;
+    _foregroundDecorationColor = Colors.transparent;
+    _constraintsWidth = 300.0;
+    _constraintsHeight = 200.0;
+    _constraints = null;
+//        BoxConstraints.expand(
+//        width: _constraintsWidth, height: _constraintsHeight);
+    _margin = null;
+    _transformX = Matrix4.rotationX(20.0);
+    _transformY = Matrix4.rotationY(20.0);
+    _transformZ = Matrix4.rotationZ(20.0);
+    _transform = null;
+  }
+
+  Widget _initContainer() {
+    _child = Container(
+//      decoration: BoxDecoration(color: Colors.white),
+        color: Colors.lightBlueAccent,
+        child: Center(
+          child: Text(
+            CONTAINER_TIP,
+            style: MyStyle.codeWhiteStyle,
+          ),
+        ));
+    _container = Container(
+      alignment: _alignment,
+      padding: _padding,
+//      color: _color,
+      decoration: BoxDecoration(
+          color: _decorationColor,
+          borderRadius: BorderRadius.circular(_decorationCircular)),
+      foregroundDecoration: BoxDecoration(color: _foregroundDecorationColor),
+//      width: _width,
+      height: _height,
+      constraints: _constraints,
+      margin: _margin,
+      transform: _transform,
+      child: _child,
+    );
+  }
 
   @override
   void initState() {
     super.initState();
-    _initAppBar();
-  }
-
-  void _initAppBar() {
-    _appBar = AppBar(
-      leading: _leading,
-      automaticallyImplyLeading: _automaticallyImplyLeading,
-      title: _title,
-      actions: _actions,
-      flexibleSpace: _flexibleSpace,
-      bottom: _bottom,
-      elevation: _elevation,
-      shape: _shape,
-      backgroundColor: _backgroundColor,
-      brightness: _brightness,
-      iconTheme: _iconTheme,
-      actionsIconTheme: _actionsIconTheme,
-      textTheme: _textTheme,
-      primary: _primary,
-      centerTitle: _centerTitle,
-      titleSpacing: _titleSpacing,
-      toolbarOpacity: _toolbarOpacity,
-      bottomOpacity: _bottomOpacity,
-    );
+    _init();
+    _initContainer();
   }
 
   @override
@@ -67,31 +102,102 @@ class _ContainerPageState extends State<ContainerPage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () => _appbarDialog()),
+      body: Column(
+        children: <Widget>[
+          Container(
+            decoration: BoxDecoration(color: Colors.green),
+            child: _container,
+          ),
+          Divider(),
+          Row(
+            children: <Widget>[
+              Container(
+                color: Colors.blueGrey,
+              ),
+            ],
+          ),
+          Container(
+//              decoration: BoxDecoration(color: MyColors.code_bg),
+//              padding: EdgeInsets.all(8.0),
+            child: ListView(
+              shrinkWrap: true,
+              children: _properties(),
+            ),
+//          _container,
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() {
+            _init();
+            _initContainer();
+          });
+        },
+        child: Text(
+          '还原',
+          style: MyStyle.codeWhiteStyle,
+        ),
+      ),
     );
   }
 
-  void _appbarDialog() async {
-    await showDialog(
-        context: context,
-        barrierDismissible: true,
-        builder: (BuildContext context) {
-//          return SimpleDialog(
-//            title: Text('AppBar'),
-//            children: <Widget>[
-//              SimpleDialogOption(child: const Text('取消'),),
-//              SimpleDialogOption(child: const Text('确定'),),
-//            ],
-//          );
-          return AlertDialog(
-              contentPadding: EdgeInsets.all(8.0),
-              content: Scaffold(
-                  appBar: _appBar,
-                  body: Column(
-                    children: <Widget>[],
-                  )));
-        });
+//  void _showDialog() async {
+//    await showDialog(
+//      context: context,
+//      barrierDismissible: true,
+//      builder: (BuildContext context) {
+//        return AlertDialog(
+//          contentPadding: EdgeInsets.all(4.0),
+//          content: _initContainer(),
+//        );
+//      },
+//    );
+//  }
+
+  List<Widget> _properties() {
+    return <Widget>[
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          GestureDetector(
+            onTap: () {
+              setState(() {
+                _padding = EdgeInsets.all(8.0);
+                _initContainer();
+              });
+            },
+            child: WidgetCodeBlock.BLOCK_PADDING_ALL,
+          ),
+          GestureDetector(
+            onTap: () {
+              setState(() {
+                _padding = EdgeInsets.fromLTRB(4.0, 8.0, 12.0, 16.0);
+                _initContainer();
+              });
+            },
+            child: WidgetCodeBlock.BLOCK_PADDING_ONLY,
+          ),
+          GestureDetector(
+            onTap: () {
+              setState(() {
+                _margin = EdgeInsets.all(8.0);
+                _initContainer();
+              });
+            },
+            child: WidgetCodeBlock.BLOCK_MARGIN_ALL,
+          ),
+          GestureDetector(
+            onTap: () {
+              setState(() {
+                _margin = EdgeInsets.fromLTRB(4.0, 8.0, 12.0, 16.0);
+                _initContainer();
+              });
+            },
+            child: WidgetCodeBlock.BLOCK_MARGIN_ONLY,
+          )
+        ],
+      ),
+    ];
   }
 }
